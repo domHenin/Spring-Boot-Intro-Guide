@@ -15,7 +15,9 @@ public class GreetingController {
         return "greeting";
     }
 
-//    @GetMapping("/test")
-//    public String
+    @GetMapping("/test")
+    public String test(@RequestParam(name="testing", required = false, defaultValue = "a test") String aTest, Model model) {
+        return "test";
+    }
 
 }
